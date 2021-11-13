@@ -9,7 +9,7 @@ user_number: int = 0
 def index():
     return render_template('index.html')
 
-@app.route('/quiz', methods=["GET", "POST"])
+@app.route('/todo', methods=["GET", "POST"])
 def quiz():
     if request.method == "POST":
         global users
@@ -20,7 +20,7 @@ def quiz():
         animal: str = request.form['animal']
 
         if fname == '' or lname == '':
-            return render_template("quiz.html")
+            return render_template("todo.html")
 
         house: str = find_house(animal)
         new_user: user = user(user_number, fname, lname, house)
@@ -28,8 +28,12 @@ def quiz():
 
         user_number += 1
 
-        return render_template("result.html", house=house)
-    return render_template("quiz.html")
+        return render_template("schedule.html", house=house)
+    return render_template("todo.html")
+
+@app.route('/schedule')
+def schedule():
+    return render_template('schedule.html')
 
 @app.route('/all-results')
 def all_results():

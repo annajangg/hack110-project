@@ -1,3 +1,22 @@
+body {
+  background-color: rgb(177, 126, 224);
+}
+
 p {
     color: #d987d5;
+    font-size: larger;
   }
+
+a.button {
+  background-color: rgb(218, 78, 234);
+  color: azure;
+  font-size: 16px;
+  font-family: monospace;
+  margin: 20px;
+  padding: 80px;
+  display: inline-block table-cell;
+  text-align: center;
+  vertical-align: center;
+  align-items: center;
+  cursor: pointer;
+}
