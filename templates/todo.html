@@ -1,28 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>Take the Quiz!</title>
+<head>
+    <meta charset="UTF-8">
+        <title>tab name</title>
     </head>
-    <body>
+<body>
+<h2>Our list of assignments in our to-do list.</h2>
+
+<div class="row">
+    <div class="column" style="background-color: #aaa;">
+        <h2>Add assignments</h2>
         <form method="post">
-            <label for="fname">First name:</label>
+            <label for="assignment">What is your assignment?</label>
             <br />
-            <input type="text" name="fname">
-            <br />
-            <label for="lname">Last name:</label>
-            <br />
-            <input type="text" name="lname">
-            <br />
-            <label for="animal">Favorite animal:</label>
-            <select name="animal">
-                <option value="lion">lion</option>
-                <option value="snake">snake</option>
-                <option value="eagle">eagle</option>
-                <option value="badger">badger</option>
-            </select>
+            <input type="text" name="assignment">
             <br />
             <input type="submit" value="Submit">
         </form>
+    </div>
+    <div class="column" style="background-color: #bbb;">
+        <h2>List of assignments</h2>
+        <p>Some text...</p>
+    </div>
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>to-do list</title>
+    </head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Drag & Drop Element | CodingNepal</title>
+        <link rel="stylesheet" href='/static/styles-todo.css' />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Sortable/1.10.2/Sortable.min.js"></script>
+    </head>
+    <body>
+        <p>You have to do: {{name}}!!!</p>
+        <form method="get">
+            <input type="submit" value="Add more.">
+        </form>
+
+
+
+        <form method="post">
+            <label for="assignment">What assignment do you need to do?</label>
+            <br />
+            <input type="text" name="assignment">
+        </form>
+    </body>
+    <body>
+        <div style='padding-top:17em;' style='padding-right:15em;'></div>
+        <form method="post">
+            <div class="wrapper">
+                <div class="item">
+                    <span class="text">Draggable Element One</span>
+                    <i class="fas fa-bars"></i>
+                </div>
+                <div class="item">
+                    <span class="text">Draggable Element Two</span>
+                    <i class="fas fa-bars"></i>
+                </div>
+                <div class="item">
+                    <span class="text">Draggable Element Three</span>
+                    <i class="fas fa-bars"></i>
+                </div>
+                <div class="item">
+                    <span class="text">Draggable Element Four</span>
+                    <i class="fas fa-bars"></i>
+                </div>
+                <div class="item">
+                    <span class="text">Draggable Element Five</span>
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+            <script>
+                const dragArea = document.querySelector(".wrapper");
+                new Sortable(dragArea, {
+                animation: 350
+                });
+            </script>
+        </form>
+        <a href="/">Go Back</a>
     </body>
 </html>

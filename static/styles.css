@@ -14,7 +14,7 @@ a.button {
   font-family: monospace;
   margin: 20px;
   padding: 80px;
-  display: inline-block table-cell;
+  display: inline-block;
   text-align: center;
   vertical-align: center;
   align-items: center;

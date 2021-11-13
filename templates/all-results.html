@@ -2,12 +2,12 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title>Take the Quiz!</title>
+        <title>tab name</title>
     </head>
     <body>
-        <h2>Welcome to results!</h2>
+        <h2>Now drag and reorder your assignments.</h2>
         {% for user in users %}
-        <p>{{user.first_name}} {{user.last_name}} is in {{user.house}}</p>
+        <p>{{user.my_assignment}}is in {{assign.name}}</p>
         {% endfor %}
     </body>
 </html>
