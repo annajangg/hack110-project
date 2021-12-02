@@ -1,22 +1,28 @@
 body {
-  background-color: rgb(177, 126, 224);
+  display: inline-block;
+  vertical-align: center;
+  background-color: #d469cf;
+  font-size: 30px;
+  margin: 50px;
+  padding: 150px;
 }
 
+
 p {
-    color: #d987d5;
-    font-size: larger;
+    color: #dbdd74;
+    font-weight: bolder;
   }
 
+label {
+  color: rgb(5, 36, 36);
+}
+
 a.button {
-  background-color: rgb(218, 78, 234);
-  color: azure;
-  font-size: 16px;
+  cursor: pointer;
+  color: rgb(5, 36, 36);
   font-family: monospace;
+  align-items: center;
   margin: 20px;
   padding: 80px;
-  display: inline-block;
   text-align: center;
-  vertical-align: center;
-  align-items: center;
-  cursor: pointer;
 }

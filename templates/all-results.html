@@ -2,12 +2,15 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title>tab name</title>
+        <title>Hack110 Quiz</title>
+        <link rel='stylesheet' href='/static/styles.css' />
     </head>
     <body>
-        <h2>Now drag and reorder your assignments.</h2>
+        <h2>Welcome to results!</h2>
         {% for user in users %}
-        <p>{{user.my_assignment}}is in {{assign.name}}</p>
+        <p>{{user.first_name}} {{user.last_name}} is {{user.animal}}</p>
         {% endfor %}
+        <br />
+        <p><a href="/" class="button">retake the quiz!</a></p>
     </body>
 </html>
